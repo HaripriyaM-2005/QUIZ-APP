@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF7F50, #FFD700);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Sign-In Page Styles */
+  input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #FF7F50;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Quiz Page Styles */
+  h1, h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  #options button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #options button:hover {
+    background-color: #555;
+  }
+  
+  #options button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .correct {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: #dc3545 !important;
+    color: white;
+  }
+  
+  /* Result Page Styles */
+  #result-box {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #next-btn {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #next-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    input[type="text"], button {
+      width: 100%;
+    }
+  }
+  
