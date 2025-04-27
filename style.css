@@ -1,0 +1,147 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a00, #ff6600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Containers */
+#signin-page, #quiz-box, #result-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Heading styles */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input box */
+input#username {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input#username:focus {
+  border-color: #ff8000;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ffa500, #ffd700);
+  transform: scale(1.05);
+}
+
+/* Question */
+#question {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Options */
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#options button {
+  background: #f9f1e7;
+  color: #333;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+#options button:hover {
+  background: #ffe0b2;
+}
+
+/* Correct and wrong answers */
+#options button.correct {
+  background: #4CAF50;
+  color: white;
+}
+
+#options button.wrong {
+  background: #F44336;
+  color: white;
+}
+
+/* Hide elements */
+.hidden {
+  display: none;
+}
+
+/* Next button */
+#next-btn {
+  margin-top: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  #signin-page, #quiz-box, #result-box {
+    padding: 30px 20px;
+  }
+  
+  #question {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

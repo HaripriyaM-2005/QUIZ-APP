@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="signin-page">
+    <h1>Welcome to the Quiz App</h1>
+    <input type="text" id="username" placeholder="Enter your name" required />
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz-box" class="hidden">
+    <h2>Hello, <span id="user-name"></span>!</h2>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="next-btn">Next Question</button>
+  </div>
+
+  <div id="result-box" class="hidden">
+    <h2>Quiz Completed!</h2>
+    <p id="score"></p>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
